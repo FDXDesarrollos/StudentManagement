@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 5.5.2  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d9d42dc8-50ee-49ad-ade7-3ae5eac26b45">
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.19.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d9d42dc8-50ee-49ad-ade7-3ae5eac26b45">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -13,7 +13,7 @@
 		<defaultValueExpression><![CDATA["Students Management System"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
-		<![CDATA[SELECT studentNum, year, course, firstName, lastName, gender, birth, status 
+		<![CDATA[SELECT studentNum, year, course, firstName, lastName, gender, DATE_FORMAT(birth, '%d/%m/%Y') AS birth, status 
 FROM student
 ORDER BY 1 ASC;]]>
 	</queryString>
@@ -47,7 +47,7 @@ ORDER BY 1 ASC;]]>
 		<property name="com.jaspersoft.studio.field.label" value="gender"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
 	</field>
-	<field name="birth" class="java.sql.Date">
+	<field name="birth" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="birth"/>
 		<property name="com.jaspersoft.studio.field.label" value="birth"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
