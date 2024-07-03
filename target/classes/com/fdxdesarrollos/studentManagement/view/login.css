@@ -1,0 +1,50 @@
+.left-form {
+	/*-fx-background-color:linear-gradient(to bottom right, #2D658C, #2CA772);*/
+	-fx-background-color:#2D658C;
+	-fx-border-color:#000;
+	-fx-border-width:.4px 0px .4px .4px;
+}
+
+.right-form {
+	-fx-background-color:#FFF;
+	-fx-border-color:#000;
+	-fx-border-width:.4px .4px .4px 0px;	
+}
+
+.close-button {
+	-fx-background-color:transparent;
+	-fx-cursor:hand;
+}
+
+.close-button:hover {
+	-fx-background-color:#FB3D63;
+}
+
+.login-button{
+	-fx-background-color:linear-gradient(to bottom, #2968A7, #14405D);
+	-fx-background-radius:4px;
+	-fx-cursor:hand;
+	-fx-text-fill:#FFF;
+	-fx-font-size:14px;
+}
+
+.login-button:hover{
+	-fx-background-color:linear-gradient(to bottom, #277BD0, #1B6FA4);
+}
+
+.textfield{
+	-fx-background-color:2D658C;
+	-fx-background-radius:5px;
+	-fx-border-color:#000;
+	-fx-border-width:2px;
+	-fx-border-radius:5px;
+	-fx-font-size:13px;
+	-fx-font-family:"sans-serif";
+}
+
+.textfield:focused{
+	-fx-background-color:#FFF;
+	-fx-border-color:#000;
+	-fx-border-width:.8px;
+}
+
